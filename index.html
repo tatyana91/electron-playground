@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Electron app</title>
+    <link rel="stylesheet" href="styles/flexboxgrid.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="app/app.js"></script>
+</head>
+<body>
+<nav class="nav is-shown">
+    <div class="logo">
+        <svg class="logo__img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="includes/svg/logo.svg#Canvas"></use>
+        </svg>
+        <span class="logo__text">Tany<span class="color-accent">A</span>lex</span>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item nav-item_active">Правила</li>
+        <li class="nav-item"><a href="/play">Игра</a></li>
+        <li class="nav-item">Настройки</li>
+    </ul>
+    <div class="header-links">
+        <!--<div class="header-search">
+            <svg class="header-links__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="includes/svg/search.svg#search"></use>
+            </svg>
+            Search
+        </div>-->
+        <div class="header-notifications">
+            <div class="header-notify">
+                <svg class="header-links__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="includes/svg/notification.svg#notification"></use>
+                </svg>
+                <span class="notify-count">9+</span>
+            </div>
+            <div class="header-storage">
+                <svg class="header-links__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="includes/svg/archive.svg#archive"></use>
+                </svg>
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+<main class="main is-shown">
+    <div class="main-content">
+        <section id="section-1" class="section is-shown">
+            <header class="section-header">
+                <h1>Морской бой</h1>
+                <h2>Разместите корабли</h2>
+            </header>
+            <div class="section-content is-shown js-section-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <header class="card-header">
+                                <h4 class="card__title">Поле</h4>
+                                <svg class="card__toggle">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="includes/svg/more.svg#Canvas"></use>
+                                </svg>
+                            </header>
+
+                            <p>Перед началом игры необходимо разместить корабли:</p>
+                            <ul>
+                                <li>1-палубных — 4 шт.</li>
+                                <li>2-палубных — 3 шт.</li>
+                                <li>3-палубных — 2 шт.</li>
+                                <li>4-палубный — 1 шт.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="field">
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_deck"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_miss"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_miss"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_deck cell_destroyed"></div>
+                            <div class="cell cell_deck"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_miss"></div>
+                            <div class="cell"></div>
+                            <div class="cell cell_miss"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="section-2" class="section">
+            <header class="section-header">
+                <h1>Main area</h1>
+                <h2>Magic begins here...</h2>
+            </header>
+            <div class="section-content is-shown js-section-content"></div>
+        </section>
+    </div>
+    <aside class="sidebar is-shown">
+        Aside menu
+    </aside>
+</main>
+</body>
+</html>
